@@ -1,0 +1,71 @@
+header {
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	font-family: Poetsen One;
+	color: rgb(53, 53, 53);
+	font-weight: 900;
+}
+header span{
+    color: red;
+}
+main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 80%;
+	column-count: 4;
+	column-gap: 10px;
+}
+
+.container img {
+	width: 100%;
+	margin-bottom: 10px;
+	display: block;
+	border-radius: 10px;
+	&:hover {
+		transform: scale(1.02);
+		cursor: pointer;
+	}
+}
+.Modal {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.088);
+	backdrop-filter: blur(5px);
+}
+.Modal .cover {
+	width: 50%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cover img {
+	height: 100%;
+	border-radius: 10px;
+	border: 5px solid white;
+	box-shadow: 0 0 30px black;
+}
+.Modal button {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	padding: 6px 10px;
+	border-radius: 20px;
+	background-color: black;
+	color: white;
+	border: 0;
+	font-size: 15px;
+}

@@ -9,6 +9,7 @@ header {
 header span{
     color: red;
 }
+
 main {
 	width: 100%;
 	height: 100%;
@@ -19,7 +20,7 @@ main {
 
 .container {
 	width: 80%;
-	column-count: 4;
+	column-count: 6;
 	column-gap: 10px;
 }
 
@@ -27,7 +28,7 @@ main {
 	width: 100%;
 	margin-bottom: 10px;
 	display: block;
-	border-radius: 10px;
+	border-radius: 15px;
 	&:hover {
 		transform: scale(1.02);
 		cursor: pointer;
@@ -36,7 +37,7 @@ main {
 .Modal {
 	width: 100%;
 	height: 100vh;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	display: none;
@@ -68,4 +69,14 @@ main {
 	color: white;
 	border: 0;
 	font-size: 15px;
+}
+
+
+@media (max-width: 786px){
+.container {
+	width: 80%;
+	column-count: 3;
+	column-gap: 10px;
+}
+
 }
